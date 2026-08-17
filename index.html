@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+window.__resources = {
+  "https://unpkg.com/react@18.3.1/umd/react.production.min.js": "assets/js/react.production.min.js",
+  "https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js": "assets/js/react-dom.production.min.js"
+};
+</script>
+<script src="assets/js/dc-runtime.js"></script>
+
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>Wok's — Chinese, Korean &amp; Pan-Asian, Gulshan-e-Iqbal</title>
+<meta name="description" content="Wok's — Chinese, Korean and Pan-Asian food in Gulshan-e-Iqbal, Karachi. Chow mein, Korean cheesy chicken, dragon chicken. Order direct on WhatsApp, dine in, or take away. Open daily until 12 AM.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Wok's",
+  "servesCuisine": ["Chinese", "Korean", "Pan-Asian"],
+  "image": "https://images.unsplash.com/photo-1672562710391-01284d39e878?auto=format&fit=crop&w=1200&q=80",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Unit F1, 1st Floor, Plot GPC, KDA Scheme 24, Block 4",
+    "addressLocality": "Gulshan-e-Iqbal, Karachi",
+    "postalCode": "74700",
+    "addressCountry": "PK"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": 24.9231, "longitude": 67.0809 },
+  "telephone": "+92-331-3339657",
+  "priceRange": "Rs 1,000–2,000",
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+    "opens": "12:00",
+    "closes": "23:59"
+  }],
+  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.4", "reviewCount": "486" },
+  "menu": "#menu",
+  "acceptsReservations": "False"
+}
+</script>
+<style>/* latin */
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/fonts/archivo-700.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("assets/fonts/archivo-800.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("assets/fonts/archivo-900.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/fonts/inter-400.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/fonts/inter-500.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/fonts/inter-600.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/fonts/inter-700.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/fonts/plexmono-400.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/fonts/plexmono-500.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/fonts/plexmono-600.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<script src="assets/js/image-slot.js"></script>
+<style>
+  html, body { margin:0; padding:0; background:#F7EFDE; }
+  body { -webkit-font-smoothing:antialiased; }
+  * { box-sizing:border-box; }
+  button { font:inherit; color:inherit; background:none; border:none; margin:0; }
+  a { color:#A11D1D; text-decoration:none; }
+  a:hover { color:#7E1414; }
+  ::selection { background:#C99A3E; color:#241E19; }
+  :focus-visible { outline:2px solid #A11D1D; outline-offset:3px; }
+  @keyframes flapIn {
+    0%   { transform:rotateX(-92deg); opacity:.25; }
+    55%  { transform:rotateX(10deg); opacity:1; }
+    78%  { transform:rotateX(-4deg); }
+    100% { transform:rotateX(0deg); opacity:1; }
+  }
+  @keyframes riseIn {
+    from { opacity:0; transform:translateY(10px); }
+    to   { opacity:1; transform:translateY(0); }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    * { animation-duration:.001ms !important; animation-iteration-count:1 !important; transition-duration:.001ms !important; }
+  }
+  /* image-slot's internal <img> ships touch-action:none for its editor drag-to-pan
+     gesture. This page is read-only (no omelette host), so that gesture never
+     activates — but the CSS still blocks native touch scrolling over any filled
+     dish photo. Restore normal scrolling via the exposed shadow part. */
+  image-slot::part(image) { touch-action: pan-y; }
+</style>
+</helmet>
+
+<div style="background:#F7EFDE;color:#241E19;font-family:Inter,system-ui,sans-serif;min-height:100vh;overflow-x:hidden">
+
+  <header style="position:sticky;top:0;z-index:40;background:rgba(247,239,222,.92);backdrop-filter:blur(12px);border-bottom:1px solid #E3D5B7">
+    <div style="max-width:1240px;margin:0 auto;padding:0 24px;height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px">
+      <button sc-camel-on-click="{{ goTop }}" style="display:flex;align-items:baseline;gap:10px;cursor:pointer">
+        <span style="font-family:'Archivo',sans-serif;font-weight:800;font-size:26px;letter-spacing:.02em;text-transform:uppercase;color:#241E19">Wok's</span>
+        <span style="width:7px;height:7px;background:#A11D1D;display:block;border-radius:50%;transform:translateY(-6px)"></span>
+        <span dir="rtl" lang="ur" style="font-size:15px;color:#6E6152;opacity:.8">ووکس</span>
+      </button>
+
+      <sc-if value="{{ wide }}" hint-placeholder-val="{{ true }}">
+        <nav style="display:flex;align-items:center;gap:28px">
+          <sc-for list="{{ nav }}" as="n" hint-placeholder-count="5">
+            <button sc-camel-on-click="{{ n.go }}" style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;cursor:pointer;padding:8px 0;color:#4A4033" style-hover="color:#A11D1D">{{ n.label }}</button>
+          </sc-for>
+          <a href="tel:+923313339657" style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.1em;color:#4A4033" style-hover="color:#A11D1D">+92 331 3339657</a>
+          <a href="{{ quickOrderHref }}" target="_blank" rel="noopener" style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;background:#A11D1D;color:#FBF6EA;white-space:nowrap;padding:13px 20px;font-weight:600;display:inline-block" style-hover="background:#7E1414">Order on WhatsApp</a>
+        </nav>
+      </sc-if>
+
+      <sc-if value="{{ narrow }}" hint-placeholder-val="{{ false }}">
+        <div style="display:flex;align-items:center;gap:10px">
+          <a href="{{ quickOrderHref }}" target="_blank" rel="noopener" style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;background:#A11D1D;color:#FBF6EA;padding:12px 16px;font-weight:600;display:inline-block;min-height:44px">Order</a>
+          <button sc-camel-on-click="{{ toggleMenu }}" aria-label="Menu" style="display:flex;flex-direction:column;gap:5px;padding:12px;cursor:pointer;border:1px solid #D8C69E">
+            <span style="width:20px;height:1.5px;background:#241E19;display:block"></span>
+            <span style="width:20px;height:1.5px;background:#241E19;display:block"></span>
+            <span style="width:13px;height:1.5px;background:#A11D1D;display:block"></span>
+          </button>
+        </div>
+      </sc-if>
+    </div>
+
+    <sc-if value="{{ menuOpen }}" hint-placeholder-val="{{ false }}">
+      <nav style="border-top:1px solid #E3D5B7;padding:12px 24px 22px;display:flex;flex-direction:column;gap:2px;animation:riseIn .25s ease;background:#F7EFDE">
+        <sc-for list="{{ nav }}" as="n" hint-placeholder-count="5">
+          <button sc-camel-on-click="{{ n.go }}" style="text-align:left;font-family:'Archivo',sans-serif;font-weight:700;font-size:24px;text-transform:uppercase;letter-spacing:.01em;padding:14px 0;min-height:48px;cursor:pointer;border-bottom:1px solid #E9DEC4;color:#241E19">{{ n.label }}</button>
+        </sc-for>
+        <a href="tel:+923313339657" style="font-family:'IBM Plex Mono',monospace;font-size:13px;padding:14px 0;color:#4A4033">+92 331 3339657</a>
+      </nav>
+    </sc-if>
+  </header>
+
+  <main id="top">
+
+  <!-- ══════════════ HERO ══════════════ -->
+  <section style="max-width:1240px;margin:0 auto;padding:clamp(40px,7vw,88px) 24px clamp(48px,7vw,88px);display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:clamp(32px,5vw,56px);align-items:center">
+    <div>
+      <div style="display:flex;align-items:center;gap:14px;margin-bottom:clamp(20px,3vw,32px)">
+        <span style="width:36px;height:1px;background:#A11D1D;display:block"></span>
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#8A7A5E">Chinese · Korean · Pan-Asian · Gulshan-e-Iqbal</span>
+      </div>
+      <h1 style="margin:0;font-family:'Archivo',sans-serif;font-weight:800;text-transform:uppercase;font-size:clamp(44px,7.5vw,84px);line-height:.98;letter-spacing:-.01em;color:#241E19;text-wrap:balance">Chow mein done right, <span style="color:#A11D1D">ordered direct.</span></h1>
+      <p style="margin:24px 0 0;max-width:46ch;color:#5B4F3F;font-size:17px;line-height:1.65">Chicken chow mein, Korean cheesy chicken, dragon chicken — cooked to order in Gulshan-e-Iqbal. Skip the delivery-app markup and order straight from us on WhatsApp.</p>
+
+      <div style="display:flex;flex-wrap:wrap;gap:18px;margin-top:28px;align-items:center">
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#241E19"><span style="color:#C99A3E">★★★★</span><span style="color:#D8C69E">★</span> 4.4 <span style="color:#8A7A5E">· 486 Google reviews</span></span>
+        <span style="width:1px;height:16px;background:#D8C69E;display:none"></span>
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#8A7A5E">Rs 1,000–2,000 / person</span>
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#8A7A5E">Open daily · closes 12 AM</span>
+      </div>
+
+      <div style="display:flex;flex-wrap:wrap;gap:12px;margin-top:32px">
+        <a href="{{ quickOrderHref }}" target="_blank" rel="noopener" style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.14em;text-transform:uppercase;background:#A11D1D;color:#FBF6EA;white-space:nowrap;padding:18px 30px;font-weight:600;min-height:48px;display:inline-flex;align-items:center" style-hover="background:#7E1414">Order on WhatsApp</a>
+        <!-- TODO: swap in the real foodpanda restaurant URL once confirmed -->
+        <a href="https://www.foodpanda.com.pk" target="_blank" rel="noopener" style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.14em;text-transform:uppercase;border:1px solid #C9B892;white-space:nowrap;padding:18px 30px;min-height:48px;display:inline-flex;align-items:center;color:#241E19" style-hover="border-color:#A11D1D;color:#A11D1D">Order on foodpanda</a>
+      </div>
+    </div>
+
+    <div style="position:relative;width:100%;aspect-ratio:4/3;background:#EDE1C4;border:1px solid #E3D5B7">
+      <image-slot id="woks-hero" shape="rect" placeholder="Hero — wok in motion" src="https://images.unsplash.com/photo-1672562710391-01284d39e878?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" credit="Photo by Jack Wu on Unsplash" credit-href="https://unsplash.com/@jackwu0722"></image-slot>
+    </div>
+  </section>
+
+  <!-- ══════════════ STAT STRIP ══════════════ -->
+  <section aria-label="Wok's at a glance" style="border-top:1px solid #E3D5B7;border-bottom:1px solid #E3D5B7;background:#241E19">
+    <div style="max-width:1240px;margin:0 auto;padding:clamp(28px,4vw,44px) 24px;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:clamp(28px,4vw,48px)">
+      <div style="display:flex;flex-direction:column;gap:14px">
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:#B7A98C">Google reviews</span>
+        {{ tickerReviews }}
+      </div>
+      <div style="display:flex;flex-direction:column;gap:14px">
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:#B7A98C">Average rating</span>
+        {{ tickerRating }}
+      </div>
+      <div style="display:flex;flex-direction:column;gap:14px">
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:#B7A98C">Dishes on the menu</span>
+        {{ tickerItems }}
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ POPULAR NOW ══════════════ -->
+  <section id="popular" style="max-width:1240px;margin:0 auto;padding:clamp(48px,7vw,96px) 24px clamp(56px,8vw,104px)">
+    <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:#A11D1D">01 / Popular now</span>
+    <h2 style="margin:16px 0 0;font-family:'Archivo',sans-serif;font-weight:800;text-transform:uppercase;font-size:clamp(36px,6vw,68px);line-height:.98;letter-spacing:-.01em;color:#241E19">Order these first.</h2>
+    <p style="margin:20px 0 0;max-width:56ch;color:#5B4F3F;font-size:16px;line-height:1.65">The six dishes our regulars order on repeat. Tap Add to build an order and send it straight to the kitchen on WhatsApp.</p>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:clamp(20px,3vw,28px);margin-top:clamp(32px,4.5vw,52px)">
+      <sc-for list="{{ popular }}" as="d" hint-placeholder-count="6">
+        <article style="display:flex;flex-direction:column;background:#FFFBF2;border:1px solid #E3D5B7">
+          <div style="position:relative;width:100%;aspect-ratio:4/3">
+            <image-slot id="{{ d.slot }}" shape="rect" placeholder="{{ d.slotHint }}" src="{{ d.photoSrc }}" credit="{{ d.photoCredit }}" credit-href="{{ d.photoCreditHref }}"></image-slot>
+          </div>
+          <div style="padding:20px 22px 22px;display:flex;flex-direction:column;gap:10px;flex:1">
+            <h3 style="margin:0;font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(20px,2.4vw,24px);text-transform:uppercase;letter-spacing:.01em;line-height:1.08;color:#241E19">{{ d.name }}</h3>
+            <p style="margin:0;color:#6E6152;font-size:14px;line-height:1.55;flex:1">{{ d.desc }}</p>
+            <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:6px;padding-top:14px;border-top:1px solid #EFE6D2">
+              <span style="font-family:'IBM Plex Mono',monospace;font-size:16px;font-weight:600;color:#241E19">{{ d.price }}</span>
+
+              <sc-if value="{{ d.hasQty }}" hint-placeholder-val="{{ false }}">
+                <div style="display:flex;align-items:center;gap:10px">
+                  <button sc-camel-on-click="{{ d.dec }}" aria-label="Remove one" style="width:32px;height:32px;border:1px solid #C9B892;cursor:pointer;font-family:'IBM Plex Mono',monospace;font-size:16px;color:#241E19" style-hover="border-color:#A11D1D;color:#A11D1D">−</button>
+                  <span style="font-family:'IBM Plex Mono',monospace;font-size:13px;min-width:16px;text-align:center">{{ d.qty }}</span>
+                  <button sc-camel-on-click="{{ d.add }}" aria-label="Add one more" style="width:32px;height:32px;border:1px solid #A11D1D;background:#A11D1D;color:#FBF6EA;cursor:pointer;font-family:'IBM Plex Mono',monospace;font-size:16px" style-hover="background:#7E1414">+</button>
+                </div>
+              </sc-if>
+              <sc-if value="{{ !d.hasQty }}" hint-placeholder-val="{{ true }}">
+                <button sc-camel-on-click="{{ d.add }}" style="{{ d.addBtnStyle }}" style-hover="background:#7E1414">Add</button>
+              </sc-if>
+            </div>
+          </div>
+        </article>
+      </sc-for>
+    </div>
+  </section>
+
+  <!-- ══════════════ FULL MENU ══════════════ -->
+  <section id="menu" style="max-width:1240px;margin:0 auto;padding:clamp(48px,7vw,96px) 24px clamp(56px,8vw,104px);border-top:1px solid #E3D5B7">
+    <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:#A11D1D">02 / Full menu</span>
+    <h2 style="margin:16px 0 0;font-family:'Archivo',sans-serif;font-weight:800;text-transform:uppercase;font-size:clamp(36px,6vw,68px);line-height:.98;letter-spacing:-.01em;color:#241E19">Everything on the wok.</h2>
+
+    <div role="tablist" aria-label="Category" style="display:flex;flex-wrap:wrap;gap:1px;background:#E3D5B7;border:1px solid #E3D5B7;margin-top:clamp(28px,4vw,44px)">
+      <sc-for list="{{ categories }}" as="c" hint-placeholder-count="7">
+        <button role="tab" sc-camel-on-click="{{ c.go }}" style="flex:1 1 110px;min-height:52px;padding:14px 12px;cursor:pointer;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;background:{{ c.bg }};color:{{ c.fg }}" style-hover="color:#A11D1D">{{ c.label }}</button>
+      </sc-for>
+    </div>
+
+    <div style="border:1px solid #E3D5B7;border-top:none;background:#FFFBF2">
+      <sc-for list="{{ menuRows }}" as="r" hint-placeholder-count="4">
+        <div style="display:flex;gap:16px;flex-wrap:wrap;align-items:center;justify-content:space-between;padding:20px 22px;border-bottom:1px solid #EFE6D2">
+          <div style="display:flex;flex-direction:column;gap:5px;min-width:220px;flex:1 1 320px">
+            <span style="font-family:'Archivo',sans-serif;font-weight:700;font-size:18px;text-transform:uppercase;letter-spacing:.01em;color:#241E19">{{ r.name }}</span>
+            <span style="color:#6E6152;font-size:13.5px;line-height:1.5">{{ r.desc }}</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:18px;flex:0 0 auto">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:15px;font-weight:600;color:#241E19;white-space:nowrap">{{ r.price }}</span>
+            <sc-if value="{{ r.hasQty }}" hint-placeholder-val="{{ false }}">
+              <div style="display:flex;align-items:center;gap:8px">
+                <button sc-camel-on-click="{{ r.dec }}" aria-label="Remove one" style="width:30px;height:30px;border:1px solid #C9B892;cursor:pointer;font-family:'IBM Plex Mono',monospace;font-size:15px;color:#241E19" style-hover="border-color:#A11D1D;color:#A11D1D">−</button>
+                <span style="font-family:'IBM Plex Mono',monospace;font-size:13px;min-width:14px;text-align:center">{{ r.qty }}</span>
+                <button sc-camel-on-click="{{ r.add }}" aria-label="Add one more" style="width:30px;height:30px;border:1px solid #A11D1D;background:#A11D1D;color:#FBF6EA;cursor:pointer;font-family:'IBM Plex Mono',monospace;font-size:15px" style-hover="background:#7E1414">+</button>
+              </div>
+            </sc-if>
+            <sc-if value="{{ !r.hasQty }}" hint-placeholder-val="{{ true }}">
+              <button sc-camel-on-click="{{ r.add }}" style="{{ r.addBtnStyle }}" style-hover="background:#7E1414">Add</button>
+            </sc-if>
+          </div>
+        </div>
+      </sc-for>
+    </div>
+    <p style="margin:20px 0 0;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.06em;color:#8A7A5E">Prices in PKR. Menu and prices confirmed by the owner before launch.</p>
+  </section>
+
+  <!-- ══════════════ HOW TO ORDER ══════════════ -->
+  <section id="how" style="background:#EFE6D2;border-top:1px solid #E3D5B7;border-bottom:1px solid #E3D5B7">
+    <div style="max-width:1240px;margin:0 auto;padding:clamp(48px,7vw,96px) 24px clamp(56px,8vw,104px)">
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:#A11D1D">03 / How to order</span>
+      <h2 style="margin:16px 0 0;font-family:'Archivo',sans-serif;font-weight:800;text-transform:uppercase;font-size:clamp(36px,6vw,68px);line-height:.98;letter-spacing:-.01em;color:#241E19">Dine in, take away, <br>or send it over.</h2>
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1px;background:#D8C69E;border:1px solid #D8C69E;margin-top:clamp(32px,4.5vw,52px)">
+        <div style="background:#FFFBF2;padding:clamp(26px,3.5vw,36px);display:flex;flex-direction:column;gap:14px">
+          <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#A11D1D">Dine-in</span>
+          <h3 style="margin:0;font-family:'Archivo',sans-serif;font-weight:700;font-size:24px;text-transform:uppercase;color:#241E19">Walk right up</h3>
+          <p style="margin:0;color:#6E6152;font-size:14.5px;line-height:1.6">First floor, Unit F1. Walk-ins welcome — full menu served for dine-in and takeaway alike.</p>
+        </div>
+        <div style="background:#FFFBF2;padding:clamp(26px,3.5vw,36px);display:flex;flex-direction:column;gap:14px">
+          <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#A11D1D">Takeaway</span>
+          <h3 style="margin:0;font-family:'Archivo',sans-serif;font-weight:700;font-size:24px;text-transform:uppercase;color:#241E19">Skip the wait</h3>
+          <p style="margin:0;color:#6E6152;font-size:14.5px;line-height:1.6">Call or WhatsApp ahead, we'll have it ready — pay when you collect.</p>
+        </div>
+        <div style="background:#FFFBF2;padding:clamp(26px,3.5vw,36px);display:flex;flex-direction:column;gap:14px">
+          <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#A11D1D">Delivery</span>
+          <h3 style="margin:0;font-family:'Archivo',sans-serif;font-weight:700;font-size:24px;text-transform:uppercase;color:#241E19">To your door</h3>
+          <!-- TODO: confirm exact delivery radius & minimum order with the owner -->
+          <p style="margin:0;color:#6E6152;font-size:14.5px;line-height:1.6">Gulshan-e-Iqbal and nearby sectors, Rs 800 minimum. Order direct on WhatsApp or through foodpanda.</p>
+        </div>
+      </div>
+
+      <div style="display:flex;flex-wrap:wrap;gap:14px;margin-top:clamp(32px,4.5vw,48px);align-items:center">
+        <a href="{{ quickOrderHref }}" target="_blank" rel="noopener" style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.14em;text-transform:uppercase;background:#A11D1D;color:#FBF6EA;padding:17px 28px;font-weight:600;min-height:48px;display:inline-flex;align-items:center" style-hover="background:#7E1414">Order on WhatsApp</a>
+        <a href="tel:+923313339657" style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.14em;text-transform:uppercase;border:1px solid #C9B892;padding:17px 28px;min-height:48px;display:inline-flex;align-items:center;color:#241E19" style-hover="border-color:#A11D1D;color:#A11D1D">Call +92 331 3339657</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ REVIEWS ══════════════ -->
+  <section id="reviews" style="max-width:1240px;margin:0 auto;padding:clamp(48px,7vw,96px) 24px clamp(56px,8vw,104px)">
+    <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:#A11D1D">04 / Reviews</span>
+    <h2 style="margin:16px 0 0;font-family:'Archivo',sans-serif;font-weight:800;text-transform:uppercase;font-size:clamp(36px,6vw,68px);line-height:.98;letter-spacing:-.01em;color:#241E19">4.4★ from 486<br>Google reviews.</h2>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:clamp(20px,3vw,28px);margin-top:clamp(32px,4.5vw,52px)">
+      <sc-for list="{{ reviews }}" as="r" hint-placeholder-count="3">
+        <article style="background:#FFFBF2;border:1px solid #E3D5B7;padding:clamp(26px,3.5vw,32px);display:flex;flex-direction:column;gap:16px">
+          <span style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#C99A3E">{{ r.starLine }}</span>
+          <p style="margin:0;color:#3B3327;font-size:15px;line-height:1.65;flex:1">"{{ r.text }}"</p>
+          <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.06em;color:#8A7A5E">— {{ r.name }}, Google review</span>
+        </article>
+      </sc-for>
+    </div>
+    <!-- Sample quotes above — replace with verbatim text pulled from the Google Business Profile before launch -->
+
+    <a href="https://www.google.com/maps/search/?api=1&query=Wok%27s+Gulshan-e-Iqbal+Karachi" target="_blank" rel="noopener" style="display:inline-block;margin-top:28px;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#A11D1D" style-hover="color:#7E1414">Read all reviews on Google →</a>
+  </section>
+
+  <!-- ══════════════ FIND US ══════════════ -->
+  <section id="find" style="border-top:1px solid #E3D5B7;background:#EFE6D2">
+    <div style="max-width:1240px;margin:0 auto;padding:clamp(48px,7vw,96px) 24px clamp(56px,8vw,104px)">
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:#A11D1D">05 / Find us</span>
+      <h2 style="margin:16px 0 0;font-family:'Archivo',sans-serif;font-weight:800;text-transform:uppercase;font-size:clamp(36px,6vw,68px);line-height:.98;letter-spacing:-.01em;color:#241E19">Unit F1, first floor.</h2>
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:clamp(24px,3.5vw,40px);margin-top:clamp(32px,4.5vw,52px);align-items:start">
+        <div style="width:100%;aspect-ratio:4/3;border:1px solid #D8C69E;overflow:hidden">
+          <iframe title="Map to Wok's, Gulshan-e-Iqbal" src="https://www.google.com/maps?q=Unit+F1+1st+Floor+Plot+GPC+KDA+Scheme+24+Block+4+Gulshan-e-Iqbal+Karachi&output=embed" style="width:100%;height:100%;border:0" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:22px">
+          <div style="display:flex;flex-direction:column;gap:6px">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:#A11D1D">Address</span>
+            <span style="font-size:15.5px;line-height:1.6;color:#241E19">Unit F1, 1st Floor, Plot GPC, KDA Scheme 24, Block 4, Gulshan-e-Iqbal, Karachi 74700</span>
+            <span style="font-size:14px;color:#6E6152">1st floor, opposite KFC, near Burger O'Clock.</span>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:6px">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:#A11D1D">Plus code</span>
+            <a href="https://www.google.com/maps/search/?api=1&query=W4J2%2BQ8+Karachi" target="_blank" rel="noopener" style="font-family:'IBM Plex Mono',monospace;font-size:14px;color:#241E19" style-hover="color:#A11D1D">W4J2+Q8 Karachi</a>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:6px">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:#A11D1D">Parking</span>
+            <span style="font-size:14.5px;line-height:1.6;color:#6E6152">Street parking outside the plaza — ask staff if it's full during peak hours.</span>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:6px">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:#A11D1D">Hours</span>
+            <span style="font-size:14.5px;color:#6E6152">Open daily · closes 12 AM</span>
+          </div>
+          <div style="display:flex;flex-wrap:wrap;gap:12px;margin-top:6px">
+            <a href="{{ quickOrderHref }}" target="_blank" rel="noopener" style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;background:#A11D1D;color:#FBF6EA;padding:15px 22px;font-weight:600;min-height:44px;display:inline-flex;align-items:center" style-hover="background:#7E1414">WhatsApp</a>
+            <a href="tel:+923313339657" style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;border:1px solid #C9B892;padding:15px 22px;min-height:44px;display:inline-flex;align-items:center;color:#241E19" style-hover="border-color:#A11D1D;color:#A11D1D">Call</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <footer style="border-top:1px solid #3A2F24;background:#201A15">
+    <div style="max-width:1240px;margin:0 auto;padding:clamp(40px,6vw,72px) 24px;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:36px;align-items:start">
+      <div style="display:flex;flex-direction:column;gap:14px">
+        <span style="font-family:'Archivo',sans-serif;font-weight:800;font-size:24px;letter-spacing:.02em;text-transform:uppercase;color:#F7EFDE">Wok's</span>
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.06em;color:#B7A98C">Chinese · Korean · Pan-Asian, Gulshan-e-Iqbal.</span>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:10px">
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:#C99A3E">Hours</span>
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#B7A98C">Open daily</span>
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#B7A98C">Closes 12 AM</span>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:10px">
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:#C99A3E">Contact</span>
+        <a href="tel:+923313339657" style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#B7A98C" style-hover="color:#F7EFDE">+92 331 3339657</a>
+        <a href="{{ quickOrderHref }}" target="_blank" rel="noopener" style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#B7A98C" style-hover="color:#F7EFDE">WhatsApp</a>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:10px">
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:#C99A3E">Elsewhere</span>
+        <!-- TODO: swap placeholder social/foodpanda links for the real ones -->
+        <a href="https://www.foodpanda.com.pk" target="_blank" rel="noopener" style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#B7A98C" style-hover="color:#F7EFDE">foodpanda</a>
+        <a href="https://www.facebook.com" target="_blank" rel="noopener" style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#B7A98C" style-hover="color:#F7EFDE">Facebook</a>
+        <a href="https://www.instagram.com" target="_blank" rel="noopener" style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#B7A98C" style-hover="color:#F7EFDE">Instagram</a>
+      </div>
+    </div>
+    <div style="max-width:1240px;margin:0 auto;padding:0 24px 36px">
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.12em;color:#5A4E3E">© 2026 Wok's</span>
+    </div>
+  </footer>
+
+  <!-- ══════════════ FLOATING ORDER TRAY ══════════════ -->
+  <sc-if value="{{ hasCart }}" hint-placeholder-val="{{ false }}">
+    <div style="position:fixed;left:0;right:0;bottom:0;z-index:50;display:flex;flex-direction:column;align-items:center">
+
+      <sc-if value="{{ cartOpen }}" hint-placeholder-val="{{ false }}">
+        <div style="width:100%;max-width:480px;margin:0 16px 8px;background:#FFFBF2;border:1px solid #241E19;box-shadow:0 -8px 28px rgba(36,30,25,.22);animation:riseIn .2s ease">
+          <div style="max-height:44vh;overflow-y:auto;padding:18px 20px 8px">
+            <sc-for list="{{ cartLines }}" as="l" hint-placeholder-count="2">
+              <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 0;border-bottom:1px solid #EFE6D2">
+                <span style="font-size:14px;color:#241E19">{{ l.qty }}× {{ l.name }}</span>
+                <div style="display:flex;align-items:center;gap:10px">
+                  <span style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#6E6152">{{ l.lineTotal }}</span>
+                  <button sc-camel-on-click="{{ l.dec }}" aria-label="Remove one" style="width:26px;height:26px;border:1px solid #C9B892;cursor:pointer;font-size:14px;color:#241E19" style-hover="border-color:#A11D1D;color:#A11D1D">−</button>
+                  <button sc-camel-on-click="{{ l.inc }}" aria-label="Add one more" style="width:26px;height:26px;border:1px solid #A11D1D;background:#A11D1D;color:#FBF6EA;cursor:pointer;font-size:14px" style-hover="background:#7E1414">+</button>
+                </div>
+              </div>
+            </sc-for>
+          </div>
+          <div style="padding:14px 20px 18px;display:flex;gap:10px">
+            <button sc-camel-on-click="{{ clearCart }}" style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;border:1px solid #C9B892;padding:13px 16px;cursor:pointer;color:#6E6152" style-hover="border-color:#A11D1D;color:#A11D1D">Clear</button>
+            <a href="{{ cartOrderHref }}" target="_blank" rel="noopener" style="flex:1;text-align:center;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;background:#A11D1D;color:#FBF6EA;padding:13px 16px;font-weight:600;display:inline-flex;align-items:center;justify-content:center" style-hover="background:#7E1414">Send on WhatsApp</a>
+          </div>
+        </div>
+      </sc-if>
+
+      <button sc-camel-on-click="{{ toggleCart }}" style="width:100%;max-width:480px;margin:0 16px 16px;background:#241E19;color:#F7EFDE;padding:16px 22px;display:flex;align-items:center;justify-content:space-between;gap:16px;cursor:pointer;box-shadow:0 8px 24px rgba(36,30,25,.28)" style-hover="background:#3A2F24">
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.1em;text-transform:uppercase">{{ cartCount }} item{{ cartPlural }} · {{ cartTotal }}</span>
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#C99A3E">{{ cartToggleLabel }}</span>
+      </button>
+    </div>
+  </sc-if>
+
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script="" data-props="{&quot;$preview&quot;:{&quot;width&quot;:1280,&quot;height&quot;:900}}">
+const RED = '#A11D1D', GOLD = '#C99A3E', CREAM = '#F7EFDE', INK = '#241E19';
+const PHONE_WA = '923313339657';
+
+const CATEGORIES = ['Soups', 'Chowmein', 'Rice', 'Chicken', 'Beef', 'Sides', 'Drinks'];
+
+// Edit prices/descriptions here — this is the only place the menu lives.
+const ITEMS = [
+  { id: 'hot-sour-soup', name: 'Hot & Sour Soup', category: 'Soups', price: 380, desc: 'Ground chicken, egg ribbon, white pepper heat.', popular: false },
+  { id: 'corn-soup', name: 'Chicken Corn Soup', category: 'Soups', price: 350, desc: 'Sweet corn, shredded chicken, silky finish.', popular: false },
+
+  { id: 'chicken-chowmein', name: 'Chicken Chow Mein', category: 'Chowmein', price: 550, desc: 'Wok-tossed noodles, julienne veg, light soy glaze.', popular: true },
+  { id: 'beef-chowmein', name: 'Beef Chow Mein', category: 'Chowmein', price: 650, desc: 'Same wok, thin-sliced beef, extra char.', popular: false },
+  { id: 'veg-chowmein', name: 'Vegetable Chow Mein', category: 'Chowmein', price: 480, desc: 'Crisp seasonal veg, no meat, full flavour.', popular: false },
+  { id: 'singapore-noodles', name: 'Singapore Rice Noodles', category: 'Chowmein', price: 600, desc: 'Curry-dusted vermicelli, egg, shrimp, chicken.', popular: false },
+  { id: 'teriyaki-noodles', name: 'Teriyaki Noodles', category: 'Chowmein', price: 620, desc: 'Soft noodles, grilled chicken, sweet-savoury toss.', popular: true },
+
+  { id: 'special-rice', name: "Wok's Special Rice", category: 'Rice', price: 650, desc: 'Egg-fried rice loaded with chicken, beef and prawn.', popular: true },
+  { id: 'chicken-fried-rice', name: 'Chicken Fried Rice', category: 'Rice', price: 500, desc: 'Classic wok rice, straightforward and generous.', popular: false },
+  { id: 'yangchow-rice', name: 'Yang Chow Fried Rice', category: 'Rice', price: 550, desc: 'Prawn, egg and chicken through every grain.', popular: false },
+
+  { id: 'korean-cheesy-chicken', name: 'Korean Cheesy Chicken', category: 'Chicken', price: 950, desc: 'Crispy chicken under a molten cheese-chilli glaze.', popular: true },
+  { id: 'dragon-chicken', name: 'Dragon Chicken', category: 'Chicken', price: 850, desc: 'Double-fried, tossed in a dry red-chilli lacquer.', popular: true },
+  { id: 'sesame-chicken', name: 'Sesame Chicken', category: 'Chicken', price: 800, desc: 'Lightly battered, tossed in sesame-soy glaze.', popular: false },
+  { id: 'chilli-chicken-dry', name: 'Chilli Chicken Dry', category: 'Chicken', price: 780, desc: 'Wok-charred chilli chicken, extra garlic.', popular: false },
+
+  { id: 'mongolian-beef', name: 'Mongolian Beef', category: 'Beef', price: 900, desc: 'Thin-sliced beef, scallion, dark soy caramel.', popular: false },
+  { id: 'black-pepper-beef', name: 'Black Pepper Beef', category: 'Beef', price: 880, desc: 'Seared beef strips, cracked pepper, onion.', popular: false },
+
+  { id: 'honey-chilli-fries', name: 'Honey Chilli Fries', category: 'Sides', price: 450, desc: 'Crispy fries in a sweet-heat glaze, sesame finish.', popular: true },
+  { id: 'spring-rolls', name: 'Vegetable Spring Rolls', category: 'Sides', price: 380, desc: 'Six pieces, sweet chilli dip.', popular: false },
+  { id: 'prawn-toast', name: 'Prawn Toast', category: 'Sides', price: 480, desc: 'Golden fried, five pieces.', popular: false },
+
+  { id: 'soft-drink', name: 'Soft Drink (Can)', category: 'Drinks', price: 120, desc: 'Coke, Sprite or Fanta.', popular: false },
+  { id: 'fresh-lime', name: 'Fresh Lime Soda', category: 'Drinks', price: 180, desc: 'Sweet, salted, or mixed.', popular: false },
+  { id: 'mineral-water', name: 'Mineral Water', category: 'Drinks', price: 80, desc: '500ml bottle.', popular: false }
+];
+
+const POPULAR_IMAGES = {
+  'chicken-chowmein': { slot: 'woks-dish-chowmein', src: 'https://images.unsplash.com/photo-1634864572865-1cf8ff8bd23d?auto=format&fit=crop&w=800&q=80', credit: 'Photo by Focused on You on Unsplash', href: 'https://unsplash.com/@focusedonyou' },
+  'korean-cheesy-chicken': { slot: 'woks-dish-korean-cheesy', src: 'https://images.unsplash.com/photo-1586793783658-261cddf883ef?auto=format&fit=crop&w=800&q=80', credit: 'Photo by Nizar Zulmi on Unsplash', href: 'https://unsplash.com/@numpanglewat' },
+  'honey-chilli-fries': { slot: 'woks-dish-honey-chilli-fries', src: 'https://images.unsplash.com/photo-1639744210631-209fce3e256c?auto=format&fit=crop&w=800&q=80', credit: 'Photo by Jay Gajjar on Unsplash', href: 'https://unsplash.com/@jaygajjar' },
+  'special-rice': { slot: 'woks-dish-special-rice', src: 'https://images.unsplash.com/photo-1551326844-4df70f78d0e9?auto=format&fit=crop&w=800&q=80', credit: 'Photo by Mae Mu on Unsplash', href: 'https://unsplash.com/@picoftasty' },
+  'dragon-chicken': { slot: 'woks-dish-dragon-chicken', src: 'https://images.unsplash.com/photo-1623689048105-a17b1e1936b8?auto=format&fit=crop&w=800&q=80', credit: 'Photo by Israel Albornoz on Unsplash', href: 'https://unsplash.com/@israelalbornoz' },
+  'teriyaki-noodles': { slot: 'woks-dish-teriyaki-noodles', src: 'https://images.unsplash.com/photo-1619371042685-827b1c646923?auto=format&fit=crop&w=800&q=80', credit: 'Photo by Nick Kimel on Unsplash', href: 'https://unsplash.com/@nickkimel' }
+};
+
+// Sample quotes — replace with verbatim text pulled from the Google Business Profile before launch.
+const REVIEWS = [
+  { name: 'Hamza S.', stars: 5, text: 'Chowmein and the Korean cheesy chicken are our go-to order every week. Portion size is generous for the price.' },
+  { name: 'Sana A.', stars: 5, text: 'Fast delivery, food arrives hot, and the dragon chicken has real kick to it.' },
+  { name: 'Bilal R.', stars: 5, text: "Ordered direct after seeing their WhatsApp number on the box. Same price, faster than the apps." }
+];
+
+const NAV = [
+  { label: 'Popular', id: 'popular' },
+  { label: 'Menu', id: 'menu' },
+  { label: 'How to Order', id: 'how' },
+  { label: 'Reviews', id: 'reviews' },
+  { label: 'Find Us', id: 'find' }
+];
+
+class Component extends DCLogic {
+  state = {
+    wide: true, menuOpen: false, activeCategory: 'Chowmein',
+    cart: {}, cartOpen: false,
+    stats: { reviews: 0, rating: 0, items: 0 }
+  };
+
+  componentDidMount() {
+    this.measure();
+    this._onResize = () => this.measure();
+    window.addEventListener('resize', this._onResize);
+    this.runCounters();
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this._onResize);
+    if (this._raf) cancelAnimationFrame(this._raf);
+  }
+
+  measure() {
+    const wide = window.innerWidth >= 900;
+    if (wide !== this.state.wide) this.setState({ wide, menuOpen: false });
+  }
+
+  runCounters() {
+    const targets = { reviews: 486, rating: 4.4, items: ITEMS.length };
+    const reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (reduce) { this.setState({ stats: targets }); return; }
+    const start = performance.now(), dur = 1400;
+    const tick = (now) => {
+      const t = Math.min(1, (now - start) / dur);
+      const e = 1 - Math.pow(1 - t, 3);
+      this.setState({ stats: {
+        reviews: Math.round(targets.reviews * e),
+        rating: targets.rating * e,
+        items: Math.round(targets.items * e)
+      }});
+      if (t < 1) this._raf = requestAnimationFrame(tick);
+    };
+    this._raf = requestAnimationFrame(tick);
+  }
+
+  flaps(text, tone) {
+    const fg = tone === 'gold' ? GOLD : CREAM;
+    const cells = String(text).split('').map((ch, i) => {
+      const sep = ch === '.' || ch === ',';
+      return React.createElement('span', {
+        key: i + ':' + ch,
+        style: {
+          fontFamily: "'IBM Plex Mono', monospace", fontWeight: 500,
+          fontSize: sep ? '26px' : 'clamp(38px,5.4vw,58px)',
+          lineHeight: 1, letterSpacing: '-.02em',
+          display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
+          minWidth: sep ? '12px' : '0.66em',
+          padding: sep ? '0' : '10px 6px 12px',
+          background: sep ? 'transparent' : '#332A1F',
+          color: fg,
+          borderTop: sep ? 'none' : '1px solid #4A3C2C',
+          boxShadow: sep ? 'none' : 'inset 0 -1px 0 rgba(0,0,0,.4), inset 0 1px 0 rgba(255,255,255,.05)',
+          transformOrigin: 'top center',
+          animation: 'flapIn .42s cubic-bezier(.3,.8,.3,1) both',
+          alignSelf: sep ? 'flex-end' : 'stretch'
+        }
+      }, ch);
+    });
+    return React.createElement('div', {
+      style: { display: 'flex', gap: '3px', alignItems: 'stretch', perspective: '420px' }
+    }, cells);
+  }
+
+  addItem(id) {
+    this.setState(s => ({ cart: Object.assign({}, s.cart, { [id]: (s.cart[id] || 0) + 1 }) }));
+  }
+
+  decItem(id) {
+    this.setState(s => {
+      const cart = Object.assign({}, s.cart);
+      if (cart[id] > 1) cart[id] -= 1; else delete cart[id];
+      return { cart };
+    });
+  }
+
+  cartLines() {
+    return Object.keys(this.state.cart).filter(id => this.state.cart[id] > 0).map(id => {
+      const item = ITEMS.find(i => i.id === id);
+      const qty = this.state.cart[id];
+      return { id, name: item.name, price: item.price, qty, lineTotal: item.price * qty };
+    });
+  }
+
+  waHref(message) {
+    return 'https://wa.me/' + PHONE_WA + '?text=' + encodeURIComponent(message);
+  }
+
+  quickOrderHref() {
+    return this.waHref("Hi Wok's! I'd like to place an order.");
+  }
+
+  cartOrderHref(lines) {
+    if (!lines.length) return this.quickOrderHref();
+    let msg = "Hi Wok's! I'd like to order:\n";
+    lines.forEach(l => { msg += '- ' + l.qty + 'x ' + l.name + ' (Rs ' + l.lineTotal.toLocaleString('en-US') + ')\n'; });
+    const total = lines.reduce((n, l) => n + l.lineTotal, 0);
+    msg += '\nTotal: Rs ' + total.toLocaleString('en-US') + '\n\nFor delivery/pickup, please confirm my address and time.';
+    return this.waHref(msg);
+  }
+
+  go(id) {
+    this.setState({ menuOpen: false });
+    const el = document.getElementById(id);
+    if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  renderVals() {
+    const { activeCategory, cart, stats } = this.state;
+    const lines = this.cartLines();
+    const count = lines.reduce((n, l) => n + l.qty, 0);
+    const total = lines.reduce((n, l) => n + l.lineTotal, 0);
+    const addBtn = 'font-family:\'IBM Plex Mono\',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;background:#A11D1D;color:#FBF6EA;padding:10px 16px;font-weight:600;cursor:pointer;min-height:36px';
+
+    return {
+      wide: this.state.wide, narrow: !this.state.wide,
+      menuOpen: this.state.menuOpen && !this.state.wide,
+      toggleMenu: () => this.setState(s => ({ menuOpen: !s.menuOpen })),
+      goTop: () => this.go('top'),
+
+      nav: NAV.map(n => ({ label: n.label, go: () => this.go(n.id) })),
+
+      quickOrderHref: this.quickOrderHref(),
+
+      tickerReviews: this.flaps(String(Math.round(stats.reviews)), 'cream'),
+      tickerRating: this.flaps(stats.rating.toFixed(1), 'gold'),
+      tickerItems: this.flaps(String(Math.round(stats.items)), 'cream'),
+
+      popular: ITEMS.filter(i => i.popular).map(i => {
+        const img = POPULAR_IMAGES[i.id];
+        const qty = cart[i.id] || 0;
+        return {
+          id: i.id, name: i.name, desc: i.desc, price: 'Rs ' + i.price.toLocaleString('en-US'),
+          slot: img.slot, slotHint: 'Photo — ' + i.name,
+          photoSrc: img.src, photoCredit: img.credit, photoCreditHref: img.href,
+          qty, hasQty: qty > 0, addBtnStyle: addBtn,
+          add: () => this.addItem(i.id), dec: () => this.decItem(i.id)
+        };
+      }),
+
+      categories: CATEGORIES.map(c => ({
+        label: c, go: () => this.setState({ activeCategory: c }),
+        bg: c === activeCategory ? INK : 'transparent',
+        fg: c === activeCategory ? CREAM : INK
+      })),
+
+      menuRows: ITEMS.filter(i => i.category === activeCategory).map(i => {
+        const qty = cart[i.id] || 0;
+        return {
+          name: i.name, desc: i.desc, price: 'Rs ' + i.price.toLocaleString('en-US'),
+          qty, hasQty: qty > 0, addBtnStyle: addBtn,
+          add: () => this.addItem(i.id), dec: () => this.decItem(i.id)
+        };
+      }),
+
+      reviews: REVIEWS.map(r => ({ name: r.name, text: r.text, starLine: '★★★★★'.slice(0, r.stars) })),
+
+      hasCart: count > 0,
+      cartCount: count,
+      cartPlural: count === 1 ? '' : 's',
+      cartTotal: 'Rs ' + total.toLocaleString('en-US'),
+      cartOpen: this.state.cartOpen && count > 0,
+      cartToggleLabel: (this.state.cartOpen && count > 0) ? 'Hide' : 'Review order',
+      toggleCart: () => this.setState(s => ({ cartOpen: !s.cartOpen })),
+      cartLines: lines.map(l => ({
+        name: l.name, qty: l.qty, lineTotal: 'Rs ' + l.lineTotal.toLocaleString('en-US'),
+        inc: () => this.addItem(l.id), dec: () => this.decItem(l.id)
+      })),
+      clearCart: () => this.setState({ cart: {}, cartOpen: false }),
+      cartOrderHref: this.cartOrderHref(lines)
+    };
+  }
+}
+
+</script>
+
+
+</body></html>
